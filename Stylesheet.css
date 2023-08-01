@@ -1,0 +1,521 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+}
+
+.particles-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #213c50;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.navBar {
+    background-color: rgba(172, 171, 171, 0.532);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.navBarOptions {
+    padding-top: 5vh;
+    margin-top: 0;
+    padding-bottom: 5vh;
+}
+
+#Logo {
+    padding-top: 0;
+    margin-top: 2vh;
+    padding-left: 4vw;
+    padding-bottom: 0;
+
+}
+
+.navBarOptions ul {
+    list-style-type: none;
+    /*removes bullets from list items*/
+    display: flex;
+}
+
+#firstOption {
+    margin-left: 30vw;
+}
+
+.navBarOptions li {
+    font-size: 1.4vw;
+    font-family: calibri light;
+    text-transform: uppercase;
+    flex: row;
+    color: white;
+    margin-left: 0.2vw;
+    text-decoration: none;
+
+}
+
+.navBarOptions li a {
+    font-size: 1.4vw;
+    font-family: calibri light;
+    text-transform: uppercase;
+    flex: row;
+    color: white;
+    margin-left: 4vw;
+    text-decoration: none;
+
+}
+
+.navBarOptions li a:hover {
+    text-decoration: underline rgba(0, 255, 255, 0.801) 2.7px;
+    text-underline-offset: 5.5vh;
+    color: aqua;
+}
+
+.hline {
+    border: none;
+    height: 20px;
+    width: 92%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #a2a09f;
+    box-shadow: 0 12px 20px -18px rgb(153, 153, 168);
+    margin: -50px auto 10px;
+}
+
+
+/* Starting page Section*/
+.MainPageContainer {
+    width: 50vw;
+    margin-top: 26vh;
+    margin-left: 4vw;
+    margin-right: 40vw;
+
+}
+
+.DescriptionTitle {
+    text-align: left;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 3vw;
+    overflow-wrap: break-word;
+    color: #e3dfdf;
+}
+
+.Description {
+    font-size: 1.7vw;
+    font-family: calibri light;
+    font-weight: lighter;
+    color: #e3dfdf;
+}
+
+
+.button {
+    width: 23vw;
+    height: 10vh;
+    margin-top: 2vw;
+    border: none;
+    border-radius: 0vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    font-size: 1.2vw;
+    color: #1b3e47;
+    font-family: calibri light;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#button1 {
+    margin-left: 4vw;
+}
+
+#button2 {
+    margin-left: 1vw;
+}
+
+.button:hover {
+    background-color: rgba(2, 217, 217, 0.993);
+    color: white;
+}
+
+
+/* About Us Section */
+#AboutUs {
+    font-family: Trebuchet MS;
+    font-size: 11vh;
+    color: #042135af;
+    padding-top: 16vh;
+    margin-top: 15%;
+    margin-left: 8vw;
+    padding-bottom: 3vh;
+
+}
+
+.AboutUsContent {
+    width: 8%;
+    font-family: calibri light;
+    font-size: 3.5vh;
+    color: #9a9489;
+    margin-left: 8vw;
+    margin-bottom: 3vh;
+    width: 30vw;
+    float: left;
+    margin-top: 15vh;
+    letter-spacing: 1.5px;
+}
+
+.AboutUsImage {
+    float: left;
+    margin-left: 1vw;
+    margin-top: -16vh;
+}
+
+
+/* Partner Profiles Section */
+
+#Profiles {
+    font-family: trebuchet MS;
+    font-size: 8vh;
+    text-align: center;
+    color: #fca311;
+    padding-top: 15vh;
+    padding-bottom: 3vh;
+    font-weight: bold;
+
+}
+
+.profilesDesc {
+    color: #1b3e47;
+    font-family: calibri light;
+    /* margin-left: 8vw; */
+    font-size: 3vh;
+    margin-bottom: 8vh;
+    text-align: center;
+    letter-spacing: 1.5px;
+
+
+}
+
+.ProfileRow {
+    display: flex;
+}
+
+
+.profileImage {
+    height: 3.8vh;
+    width: 1.6vw;
+}
+
+.ProfileNames {
+
+    font-family: calibri light;
+    font-size: 5vh;
+    color: #fca311;
+    padding-top: 4vh;
+    text-align: left;
+}
+
+.ProfilesContent {
+    font-family: calibri light;
+    font-size: 2.8vh;
+    color: #213c50;
+    padding-top: 3vh;
+    letter-spacing: 0.5px;
+}
+
+.mainProfile {
+    background-color: rgba(209, 218, 236, 0.212);
+    float: left;
+    width: 40%;
+    height: 45vh;
+    padding-left: 3vw;
+    margin-left: 8vw;
+    padding-right: 1vw;
+    border-radius: 10px;
+    box-shadow: 0 20px 15px rgb(0 0 0 / 7%)
+}
+
+
+.profile1 {
+    width: 40%;
+    height: 45vh;
+    background-color: #8b8b8b0f;
+    float: left;
+    border-radius: 10px;
+    padding-right: 2vw;
+    padding-left: 3vw;
+    margin-left: 2vw;
+    box-shadow: 0 20px 15px rgb(0 0 0 / 7%)
+}
+
+.profile2 {
+    float: left;
+    width: 40%;
+    height: 45vh;
+    padding-left: 3vw;
+    margin-left: 8vw;
+    padding-right: 1vw;
+    margin-top: 3vh;
+    border-radius: 10px;
+    background-color: #8b8b8b0f;
+    box-shadow: 0 20px 15px rgb(0 0 0 / 7%)
+}
+
+.profile3 {
+    float: left;
+    width: 40%;
+    height: 45vh;
+    background-color: rgba(209, 218, 236, 0.212);
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    padding-right: 2vw;
+    padding-left: 3vw;
+    box-shadow: 0 20px 15px rgb(0 0 0 / 7%)
+}
+
+.Clients {
+    font-family: Trebuchet MS;
+    font-size: 3vh;
+    color: #1c6494e4;
+    padding-bottom: 1vh;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#BrightJordan {
+    padding-top: 6vh;
+}
+
+
+/* Services Section */
+.Services {
+    background-color: #f1e0c21d;
+    padding-right: 8vw;
+    margin-top: 15vh;
+    display: flex;
+    padding-bottom: 30vh;
+    float:left;
+}
+
+
+.ServicesHeading {
+    font-family: Trebuchet MS;
+    font-size: 11vh;
+    color: #042135ce;
+    margin-left: 8vw;
+    padding-bottom: 1vh;
+    margin-top: 10vh;
+    padding-top: 8vh;
+}
+
+.servicesDesc {
+    padding-left: 8vw;
+    font-family: calibri light;
+    font-size: 3vh;
+    color: #c5452c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 0vh;
+
+}
+
+.ServicesMain {
+    float: left;
+}
+
+
+.ServicesContent {
+    float: left;
+    padding-left: 8vw;
+    font-family: calibri light;
+    font-size: 3vh;
+    color: #213c50;
+    padding-top: 20vh;
+    margin-left: 14vw;
+    letter-spacing: 1px;
+
+
+
+}
+
+.servicesList li {
+    list-style-type: none;
+}
+
+
+.servicesList li:hover {
+    -webkit-transform: scale(1.1)
+}
+
+
+
+.toolTip {
+    position: relative;
+    display: inline-block;
+}
+
+.toolTip .tooltiptext {
+    visibility: hidden;
+    width: 18vw;
+    background-color: rgba(58, 89, 190, 0.274);
+    color: #fff;
+    text-align: center;
+    font-size: 1vw;
+    padding:1vw;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -6px;
+    right: 102%;
+
+}
+
+.toolTip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Industries Section */
+
+.IndustriesHeading2 {
+    font-family: Trebuchet MS;
+    font-size: 3vh;
+    color: #d37516af;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+
+.IndustriesMainHeading {
+    font-family: Trebuchet MS;
+    font-size: 11vh;
+    color: #000000ef;
+    text-align: center;
+    margin-top: 2vh;
+    margin-top: 85vh;
+    padding-top: 14vh;
+
+}
+
+.hlineIndustries {
+    border: none;
+    height: 20px;
+    width: 10%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #a2a09f;
+    box-shadow: 0 12px 20px -18px rgb(153, 153, 168);
+    margin: -50px auto 10px;
+    margin-top: -5vh;
+
+}
+
+.IndustriesTitles {
+    font-family: Trebuchet MS;
+    font-size: 4vh;
+    color: #2b2a2aef;
+    text-align: left;
+    margin-top: 2vh;
+    padding-top: 15vh;
+
+
+}
+
+.IndustriesDesc {
+    font-family: Calibri light;
+    font-size: 3vh;
+    color: #4e4e4eef;
+    text-align: left;
+    float: left;
+    margin-top: 2vh;
+
+
+}
+
+.IndustriesPics {
+    margin-left: 8vw;
+    float: left;
+    margin-top: 7vh;
+    padding-bottom: 3vh;
+}
+
+.IndustriesContainer {
+    float: left;
+    width: 65%;
+    margin-top: -10vh;
+    margin-left: 3vw;
+}
+
+.IndustriesRows {
+    overflow: hidden;
+    background-color: rgba(248, 248, 248, 0.329);
+    box-shadow: 10px 20px 15px rgb(0 0 0 / 6%);
+}
+
+.Industries {
+    margin-bottom: 20vh;
+}
+
+/*Contact Us Section*/
+
+#ContactUs {
+    padding-bottom:25vh;
+    background-color: #888b7a0a;
+    margin-bottom:50vh;
+}
+
+.ContactMainHeading {
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 10vh;
+    color: #ae9791;
+    margin-top: 2vh;
+    padding-top: 15vh;
+
+}
+
+.ContactUsDesc {
+    font-family: Calibri light;
+    font-size: 3vh;
+    color: #4e4e4ef7;
+    text-align: center;
+    margin-top: 2vh;
+
+}
+
+.EmailContainer {
+    display:flex ;
+    padding-top: 10vh;
+}
+
+.EmailIcon {
+    float:left;
+    margin-left: 37vw;
+}
+
+.EmailAddress {
+    float:left;
+    font-family: Calibri;
+    font-size: 5vh;
+    color: #4e4e4ec2;
+    margin-left: 1vw;
+}
+
